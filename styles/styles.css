@@ -277,6 +277,12 @@ a:hover, a:focus {
   margin-right: 20px;
 }
 
+@media (max-width: 500px) {
+  .description {
+    margin: 30px;
+  }
+}
+
 @media (max-width: 400px) {
   .description {
     margin: 20px;

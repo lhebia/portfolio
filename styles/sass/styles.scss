@@ -48,3 +48,9 @@ a {
         }
     }
 }
+
+@media (max-width: 400px) {
+    .description {
+        margin: 20px;
+    }
+}

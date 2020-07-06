@@ -1,37 +1,5 @@
 @import 'setup';
 @import 'globalStyles';
-
-.flexContainer {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    justify-content: flex-start;
-    font-weight: 100;
-}
-
-.description {
-    max-width: 22rem;
-    margin: 90px;
-    div {
-        margin-top: 20px;
-        i {
-            margin-right: 20px;
-            font-size: 1.6rem;
-        }
-    }
-    p {
-        margin: 0.75rem 0;
-    }
-}
-
-@media (max-width: 500px) {
-    .description {
-        margin: 30px;
-    }
-}
-
-@media (max-width: 400px) {
-    .description {
-        margin: 20px;
-    }
-}
+@import 'header';
+@import 'main';
+@import 'footer';

@@ -15,16 +15,37 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 2rem;
-    line-height: 4rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    font-weight: bold;
 }
 
 a {
     text-decoration: none;
-    font-weight: bolder;
-    color: $mainHighlight;
+    color: $textDark;
     &:hover,
     &:focus {
-        color: $textDark;
+        color: $mainHighlight;
     }
+}
+
+.flexContainer {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    width: 85%;
+    margin: 0 auto;
+}
+
+.accentText {
+    // font-style: italic;
+    color: $mainHighlight;
 }

@@ -20,9 +20,9 @@ h1 {
     font-weight: bold;
 }
 
-h2 {
-    font-size: 1.6rem;
-    line-height: 2.2rem;
+h2, h3, h4 {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
     font-weight: bold;
 }
 
@@ -48,4 +48,45 @@ a {
 
 .accentText {
     color: $mainHighlight;
+}
+
+.spacedLetters {
+    letter-spacing: 0.1rem;
+}
+
+strong {
+    font-weight: bolder;
+}
+
+.styledBtn {
+    background-color: $mainHighlight;
+    padding: 1rem 1.6rem;
+    text-transform: uppercase;
+    color: $lightBG;
+    font-weight: bold;
+    border: none;
+    transition: all ease 0.3s;
+
+    &:hover,
+    &:focus {
+        background-color: $textDark;
+    }
+}
+
+.titleBar {
+    text-transform: uppercase;
+    h2 {
+        font-weight: bold;
+        padding-bottom: 1.6rem;
+        position: relative;
+    }
+    h2::before {
+        content: '';
+        position: absolute;
+        top: 50px;
+        left: 0px;
+        width: 86px;
+        height: 4px;
+        background-color: $mainHighlight;
+    }
 }

@@ -235,9 +235,9 @@ h1 {
   font-weight: bold;
 }
 
-h2 {
-  font-size: 1.6rem;
-  line-height: 2.2rem;
+h2, h3, h4 {
+  font-size: 2.2rem;
+  line-height: 2.8rem;
   font-weight: bold;
 }
 
@@ -265,6 +265,49 @@ a:hover, a:focus {
 
 .accentText {
   color: #d9832e;
+}
+
+.spacedLetters {
+  letter-spacing: 0.1rem;
+}
+
+strong {
+  font-weight: bolder;
+}
+
+.styledBtn {
+  background-color: #d9832e;
+  padding: 1rem 1.6rem;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  font-weight: bold;
+  border: none;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.styledBtn:hover, .styledBtn:focus {
+  background-color: #090a0c;
+}
+
+.titleBar {
+  text-transform: uppercase;
+}
+
+.titleBar h2 {
+  font-weight: bold;
+  padding-bottom: 1.6rem;
+  position: relative;
+}
+
+.titleBar h2::before {
+  content: '';
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  width: 86px;
+  height: 4px;
+  background-color: #d9832e;
 }
 
 header {
@@ -318,14 +361,14 @@ header nav button img {
 .heroContainer {
   position: absolute;
   top: 0;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
 .heroContainer .heroImage {
   width: 50%;
   opacity: 0.9;
-  background-image: url(./../../assets/hero-splash.jpg);
+  background-image: url("./../assets/hero-splash.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -405,5 +448,66 @@ header nav button img {
     height: 50%;
     padding: 0;
     margin: 0 auto;
+  }
+}
+
+.aboutWrapper {
+  background-color: #eaedf2;
+}
+
+.sectionPadding {
+  padding-top: 5.2rem;
+  padding-bottom: 5.2rem;
+}
+
+.aboutContent {
+  padding: 5rem 0;
+}
+
+.aboutImage {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.aboutImage img {
+  border: 20px solid #fcfcfc;
+  border-radius: 5px;
+  -webkit-box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 2px 2px 9px 2px rgba(0, 0, 0, 0.12);
+}
+
+.aboutText {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 60%;
+          flex: 1 1 60%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 5.2rem;
+}
+
+.description {
+  padding: 2.2rem 0;
+}
+
+@media (max-width: 850px) {
+  .aboutText {
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .aboutText {
+    padding: 2.2rem 0 0 0;
   }
 }

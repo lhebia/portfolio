@@ -1,0 +1,72 @@
+// Main area 
+
+// About section 
+
+.aboutWrapper {
+    background-color: $alternateBG;
+}
+
+.sectionPadding {
+    padding-top: 5.2rem;
+    padding-bottom: 5.2rem;
+}
+
+.aboutContent {
+    padding: 5rem 0;
+}
+
+.aboutImage {
+    // justify-content: center;
+    // align-items: center;
+    flex: 1 1 40%;
+    img {
+        border: 20px solid $lightBG;
+        border-radius: $borderRadius;
+        -webkit-box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.12);
+        -moz-box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.12);
+        box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.12);
+    }
+}
+
+.aboutText {
+    flex: 1 1 60%;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5.2rem;
+}
+
+.description {
+    padding: 2.2rem 0;
+}
+
+
+// My Skills section
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 850px) {
+    .aboutText {
+        padding-left: 1rem;
+    }
+
+}
+
+@media (max-width: 768px) {
+    .aboutContent {
+        flex-direction: column;
+    }
+
+    .aboutText {
+        padding: 2.2rem 0 0 0;
+        // text-align: center;
+    }
+
+}

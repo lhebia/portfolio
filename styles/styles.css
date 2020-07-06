@@ -241,6 +241,11 @@ h2, h3, h4 {
   font-weight: bold;
 }
 
+i {
+  font-size: 2.2rem;
+  line-height: 2.6rem;
+}
+
 a {
   text-decoration: none;
   color: #090a0c;
@@ -308,6 +313,11 @@ strong {
   width: 86px;
   height: 4px;
   background-color: #d9832e;
+}
+
+.gridContainer {
+  display: -ms-grid;
+  display: grid;
 }
 
 header {
@@ -407,7 +417,7 @@ header nav button img {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 1.6rem;
   }
   .mainMenuNav {
     -webkit-box-orient: vertical;
@@ -421,6 +431,7 @@ header nav button img {
     width: 100%;
     border-radius: 8px;
     opacity: 0;
+    margin-top: 1.6rem;
   }
   .makeVisible {
     opacity: 1;
@@ -448,6 +459,15 @@ header nav button img {
     height: 50%;
     padding: 0;
     margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  header nav div:first-of-type {
+    margin-top: 1rem;
+  }
+  .mainMenuNav {
+    margin-top: 0.6rem;
   }
 }
 
@@ -492,6 +512,32 @@ header nav button img {
 
 .description {
   padding: 2.2rem 0;
+}
+
+.skillsContainer {
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 2.2rem 0;
+  gap: 1.6rem;
+}
+
+.toolBox {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.toolBox img,
+.toolBox svg {
+  height: 2.2rem;
+  width: 2.2rem;
 }
 
 @media (max-width: 850px) {

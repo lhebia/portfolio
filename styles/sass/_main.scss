@@ -8,11 +8,9 @@
 .aboutImage {
     flex: 1 1 40%;
     img {
-        border: 20px solid $lightBG;
+        // border: 20px solid $lightBG;
+        border: 20px solid transparent;
         border-radius: $borderRadius;
-        // -webkit-box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.12);
-        // -moz-box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.12);
-        // box-shadow: 2px 2px 9px 2px rgba(0,0,0,0.12);
     }
 }
 
@@ -51,13 +49,57 @@
 }
 
 // Project Section
-
-.projectArticle {
-    background-color: transparent;
+.projectGrid {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1.6rem 0;
+    gap: 2.2rem;
 }
 
-.projectImage {
-    flex: 1 1 40%;
+.projectArticle div {
+    padding: 0 1rem;
+}
+
+figure {
+    position: relative;
+    border-radius: $borderRadius;
+    margin-bottom: 1.6rem;
+}
+
+figure img {
+    transform: scale(1);
+    transition: .45s ease-in-out;
+    border-radius: $borderRadius;
+}
+
+figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 3rem;
+    font-size: 1.6rem;
+    line-height: 2.2rem;
+    color: $lightBG;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .45s ease-in-out;
+    text-align: center;
+}
+
+.overlay {
+    background: $altDark;
+    position: absolute;
+    border-radius: $borderRadius;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .45s ease-in-out;
 }
 
 .projectText {
@@ -67,8 +109,34 @@
     align-items: flex-start;
 }
 
+figure:hover .overlay {
+    opacity: 0.96;
+    z-index: 1;
+}
+figure:hover figcaption {
+    opacity: 1;
+    z-index: 2;
+}
+figure:hover img {
+    transform: scale(0.94);
+}
 
-
+figure a {
+    text-decoration: none;
+    color: $lightBG;
+    background-color: transparent;
+    padding: 0.2rem;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+    border: 1px solid $mainHighlight;
+    border-radius: $borderRadius;
+    &:hover,
+    &:focus {
+        color: $lightBG;
+        background-color: $mainHighlight;
+    }
+}
 
 // Media Queries for Main content
 @media (max-width: 850px) {
@@ -85,11 +153,14 @@
 
     .aboutText {
         padding: 2.2rem 0 0 0;
-        // text-align: center;
     }
 
     .skillsContainer {
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    .projectGrid {
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }

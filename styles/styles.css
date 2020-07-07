@@ -252,8 +252,8 @@ a {
 }
 
 a:hover, a:focus {
-  color: #d9832e;
-  border-bottom: 1px solid #d9832e;
+  color: #FCA311;
+  border-bottom: 1px solid #FCA311;
 }
 
 .flexContainer {
@@ -269,11 +269,11 @@ a:hover, a:focus {
 }
 
 .alternateBackground {
-  background-color: #eef0eb;
+  background-color: #E5E5E5;
 }
 
 .accentText {
-  color: #d9832e;
+  color: #FCA311;
 }
 
 .spacedLetters {
@@ -290,7 +290,7 @@ strong {
 }
 
 .styledBtn {
-  background-color: #d9832e;
+  background-color: #FCA311;
   padding: 1rem 1.6rem;
   text-transform: uppercase;
   color: #fcfcfc;
@@ -321,7 +321,7 @@ strong {
   left: 0px;
   width: 86px;
   height: 4px;
-  background-color: #d9832e;
+  background-color: #FCA311;
 }
 
 .gridContainer {
@@ -349,6 +349,8 @@ header nav {
 
 header nav h1 {
   color: #fcfcfc;
+  font-size: 1.2rem;
+  font-weight: bold;
 }
 
 header nav li {
@@ -387,7 +389,7 @@ header nav button img {
 .heroContainer .heroImage {
   width: 50%;
   opacity: 0.9;
-  background-image: url("./../assets/hero-splash.jpg");
+  background-image: url("./../assets/hero-splash3.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -491,7 +493,7 @@ header nav button img {
 }
 
 .aboutImage img {
-  border: 20px solid #fcfcfc;
+  border: 20px solid transparent;
   border-radius: 5px;
 }
 
@@ -538,14 +540,69 @@ header nav button img {
   width: 2.2rem;
 }
 
-.projectArticle {
-  background-color: transparent;
+.projectGrid {
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  padding: 1.6rem 0;
+  gap: 2.2rem;
 }
 
-.projectImage {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 40%;
-          flex: 1 1 40%;
+.projectArticle div {
+  padding: 0 1rem;
+}
+
+figure {
+  position: relative;
+  border-radius: 5px;
+  margin-bottom: 1.6rem;
+}
+
+figure img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: .45s ease-in-out;
+  transition: .45s ease-in-out;
+  border-radius: 5px;
+}
+
+figcaption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 3rem;
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+  color: #fcfcfc;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: .45s ease-in-out;
+  transition: .45s ease-in-out;
+  text-align: center;
+}
+
+.overlay {
+  background: #14213D;
+  position: absolute;
+  border-radius: 5px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: .45s ease-in-out;
+  transition: .45s ease-in-out;
 }
 
 .projectText {
@@ -562,6 +619,38 @@ header nav button img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+figure:hover .overlay {
+  opacity: 0.96;
+  z-index: 1;
+}
+
+figure:hover figcaption {
+  opacity: 1;
+  z-index: 2;
+}
+
+figure:hover img {
+  -webkit-transform: scale(0.94);
+          transform: scale(0.94);
+}
+
+figure a {
+  text-decoration: none;
+  color: #fcfcfc;
+  background-color: transparent;
+  padding: 0.2rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 0.5rem;
+  border: 1px solid #FCA311;
+  border-radius: 5px;
+}
+
+figure a:hover, figure a:focus {
+  color: #fcfcfc;
+  background-color: #FCA311;
 }
 
 @media (max-width: 850px) {
@@ -583,6 +672,10 @@ header nav button img {
   .skillsContainer {
     -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
+  }
+  .projectGrid {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
   }
 }
 

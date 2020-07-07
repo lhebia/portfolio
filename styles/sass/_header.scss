@@ -12,6 +12,8 @@ header nav {
 
     h1 {
         color: $lightBG;
+        font-size: 1.2rem;
+        font-weight: bold;
     }
 
     li {
@@ -45,7 +47,7 @@ header nav {
     .heroImage {
         width: 50%;
         opacity: 0.9;
-        background-image: url('./../assets/hero-splash.jpg');
+        background-image: url('./../assets/hero-splash3.jpg');
         background-position: center;
         background-size: cover;
     }

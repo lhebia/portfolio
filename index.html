@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./assets/memoji-transparent.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/b60101724a.js" crossorigin="anonymous"></script>
     <title>Lawrence Hebia | Web Developer</title>
 </head>
@@ -40,11 +41,12 @@
             </nav>
         </div>
         <div class="flexContainer heroContainer">
-            <div class="heroImage">
+            <div class="heroImage" data-aos="zoom-out" data-aos-duration="1226">
                 <p class="visuallyHidden">Silhouette photograph of Lawrence Hebia.</p>
             </div>
             <div class="heroText flexContainer">
                 <div>
+                <!-- <div data-aos="zoom-out" data-aos-duration="1226"> -->
                     <p>Hi there,</p>
                     <h2>I'm Lawrence Hebia</h2>
                     <p class="accentText spacedLetters">Front-End Web Developer</p>
@@ -98,103 +100,121 @@
             <section class="container sectionPadding">
                 <div class="titleBar">
                     <h2>Recent Work</h2>
-                    <p class="spacedLetters">Things I've worked on recently</p>
+                    <p class="spacedLetters">A few of the things i've built</p>
                 </div>
 
                 <div class="gridContainer projectGrid">
-                    <article class="projectArticle">
+                    <article class="projectArticle" data-aos="fade-up"
+                        data-aos-offset="100"
+                        data-aos-delay="200"
+                        data-aos-duration="1200">
                         <figure class="projectImage">
                             <img src="./../assets/devcompile.png" alt="Screenshot of the Devcompile project" />
                             <figcaption>
                                 <p>A social feed for developers.</p>
-                                <!-- <a href="#">Live</a> -->
+                                <a href="https://lhebia.github.io/lawrence-hebia-project-five/" target="_blank" rel="noreferrer noopener">Live</a>
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
                         <div class=""">
                             <p class="spacedLetters"><strong>Devcompile</strong></p>
                             <p>Built using React, the Dev.to API and Firebase.</p>
-                            <p>Live | Github</p>
+                            <p><a href="https://lhebia.github.io/lawrence-hebia-project-five/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/lhebia/lawrence-hebia-project-five" target="_blank" rel="noreferrer noopener">Github</a></p>
                         </div>
                     </article>
 
-                    <article class="projectArticle">
+                    <article class="projectArticle" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="900">
                         <figure class="projectImage">
-                            <img src="./../assets/devcompile.png" alt="Screenshot of the Devcompile project" />
+                            <img src="./../assets/travelAsk.png" alt="Screenshot of the Travel Ask project" />
                             <figcaption>
-                                <p>A social feed for developers.</p>
-                                <a href="#">Live</a>
+                                <p>Travel data in one place.</p>
+                                <a href="https://yuliana-lawrence.github.io/travelAsk/" target="_blank" rel="noreferrer noopener">Live</a>
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
                         <div class=""">
-                            <p class="spacedLetters"><strong>Devcompile</strong></p>
-                            <p>Built using React, the Dev.to API and Firebase.</p>
-                            <p>Live | Github</p>
+                            <p class=" spacedLetters"><strong>TravelAsk</strong></p>
+                            <p>Built using JQuery, SASS and API data.</p>
+                            <p><a href="https://yuliana-lawrence.github.io/travelAsk/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/Yuliana-Lawrence/travelAsk" target="_blank"
+                                    rel="noreferrer noopener">Github</a></p>
                         </div>
                     </article>
 
-                    <article class="projectArticle">
+                    <article class="projectArticle" data-aos="fade-up"
+                        data-aos-offset="150"
+                        data-aos-delay="100"
+                        data-aos-duration="1000">
                         <figure class="projectImage">
-                            <img src="./../assets/devcompile.png" alt="Screenshot of the Devcompile project" />
+                            <img src="./../assets/noahsArk.png" alt="Screenshot of the Noah's Ark project" />
                             <figcaption>
-                                <p>A social feed for developers.</p>
-                                <a href="#">Live</a>
+                                <p>Test your memory with emojis.</p>
+                                <a href="https://lhebia.github.io/lawrenceHebiaProjectThree/" target="_blank" rel="noreferrer noopener">Live</a>
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
                         <div class=""">
-                            <p class="spacedLetters"><strong>Devcompile</strong></p>
-                            <p>Built using React, the Dev.to API and Firebase.</p>
-                            <p>Live | Github</p>
+                            <p class="spacedLetters"><strong>Noah's Ark</strong></p>
+                            <p>Built using HTML5, CSS3 and JQuery.</p>
+                            <p><a href="https://lhebia.github.io/lawrenceHebiaProjectThree/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/lhebia/lawrenceHebiaProjectThree" target="_blank"
+                                    rel="noreferrer noopener">Github</a></p>
                         </div>
                     </article>
 
-                    <article class="projectArticle">
+                    <article class="projectArticle" data-aos="fade-up"
+                        data-aos-offset="150"
+                        data-aos-delay="100"
+                        data-aos-duration="1100">
                         <figure class="projectImage">
-                            <img src="./../assets/devcompile.png" alt="Screenshot of the Devcompile project" />
+                            <img src="./../assets/myWatchlist.png" alt="Screenshot of the My Watchlist project" />
                             <figcaption>
-                                <p>A social feed for developers.</p>
-                                <a href="#">Live</a>
+                                <p>Find your next TV Show binge.</p>
+                                <a href="https://tobikoberalphandnull.github.io/project-six/" target="_blank" rel="noreferrer noopener">Live</a>
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
                         <div class=""">
-                            <p class="spacedLetters"><strong>Devcompile</strong></p>
-                            <p>Built using React, the Dev.to API and Firebase.</p>
-                            <p>Live | Github</p>
+                            <p class="spacedLetters"><strong>My Watchlist</strong></p>
+                            <p>Built using React, Firebase and remote collaboration.</p>
+                            <p><a href="https://tobikoberalphandnull.github.io/project-six/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/TobiKobeRalphAndNull/project-six" target="_blank"
+                                    rel="noreferrer noopener">Github</a></p>
                         </div>
                     </article>
 
-                    <article class="projectArticle">
+                    <article class="projectArticle" data-aos="fade-up"
+                        data-aos-offset="100"
+                        data-aos-delay="200"
+                        data-aos-duration="1300">
                         <figure class="projectImage">
-                            <img src="./../assets/devcompile.png" alt="Screenshot of the Devcompile project" />
+                            <img src="./../assets/funPlace.png" alt="Screenshot of the Fun Place PSD conversion" />
                             <figcaption>
-                                <p>A social feed for developers.</p>
-                                <a href="#">Live</a>
+                                <p>Fun Place PSD conversion.</p>
+                                <a href="https://lhebia.github.io/lawrence-hebia-project-two/" target="_blank" rel="noreferrer noopener">Live</a>
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
                         <div class=""">
-                            <p class="spacedLetters"><strong>Devcompile</strong></p>
-                            <p>Built using React, the Dev.to API and Firebase.</p>
-                            <p>Live | Github</p>
+                            <p class="spacedLetters"><strong>Fun Place</strong></p>
+                            <p>Multipage PSD conversion using HTML5 and CSS3.</p>
+                            <p><a href="https://lhebia.github.io/lawrence-hebia-project-two/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/lhebia/lawrence-hebia-project-two" target="_blank"
+                                    rel="noreferrer noopener">Github</a></p>
                         </div>
                     </article>
 
-                    <article class="projectArticle">
+                    <article class="projectArticle" data-aos="fade-up" data-aos-offset="100" data-aos-delay="50" data-aos-duration="1000">
                         <figure class="projectImage">
-                            <img src="./../assets/devcompile.png" alt="Screenshot of the Devcompile project" />
+                            <img src="./../assets/passwordGenerator.png" alt="Screenshot of the Password Generator project" />
                             <figcaption>
-                                <p>A social feed for developers.</p>
-                                <a href="#">Live</a>
+                                <p>Generate complex passwords.</p>
+                                <a href="https://lhebia.github.io/Password-generator/" target="_blank" rel="noreferrer noopener">Live</a>
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
                         <div class=""">
-                            <p class="spacedLetters"><strong>Devcompile</strong></p>
-                            <p>Built using React, the Dev.to API and Firebase.</p>
-                            <p>Live | Github</p>
+                                                <p class=" spacedLetters"><strong>Password Generator</strong></p>
+                            <p>Built using HTML, CSS3 and JavaScript.</p>
+                            <p><a href="https://lhebia.github.io/Password-generator/" target="_blank" rel="noreferrer noopener">Live</a> |
+                                <a href="https://github.com/lhebia/Password-generator" target="_blank" rel="noreferrer noopener">Github</a>
+                            </p>
                         </div>
                     </article>
                 </div>
@@ -211,5 +231,9 @@
 
     </footer>
     <script src="./scripts/scripts.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

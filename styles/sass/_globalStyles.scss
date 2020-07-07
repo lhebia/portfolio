@@ -38,6 +38,7 @@ a {
     &:focus {
         color: $mainHighlight;
         border-bottom: 1px solid $mainHighlight;
+        transform: scale(1.1);
     }
 }
 
@@ -83,7 +84,7 @@ strong {
 
     &:hover,
     &:focus {
-        background-color: $textDark;
+        background-color: $altDark;
     }
 }
 

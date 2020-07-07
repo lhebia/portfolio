@@ -36,7 +36,7 @@ lhApp.addMenuButtonListener = () => {
 
 lhApp.fillSkills = () => {
     const skillsContainer = document.querySelector('.skillsContainer');
-    lhApp.skills.map((skill) => {
+    lhApp.skills.forEach((skill) => {
         const skillBox = document.createElement('li');
         skillBox.classList.add('toolBox');
         skillBox.innerHTML = `

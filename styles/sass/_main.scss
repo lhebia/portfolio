@@ -162,7 +162,12 @@ figure a {
     .projectGrid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
 
+@media (max-width: 550px) {
+    .projectGrid {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -173,5 +178,4 @@ figure a {
     .toolBox {
         padding: 0.5rem;
     }
-
 }

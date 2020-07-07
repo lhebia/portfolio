@@ -254,6 +254,8 @@ a {
 a:hover, a:focus {
   color: #FCA311;
   border-bottom: 1px solid #FCA311;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .flexContainer {
@@ -301,7 +303,7 @@ strong {
 }
 
 .styledBtn:hover, .styledBtn:focus {
-  background-color: #090a0c;
+  background-color: #14213D;
 }
 
 .titleBar {
@@ -676,6 +678,13 @@ figure a:hover, figure a:focus {
   .projectGrid {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 550px) {
+  .projectGrid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 

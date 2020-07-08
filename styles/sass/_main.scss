@@ -138,6 +138,70 @@ figure a {
     }
 }
 
+// Footer section
+
+form {
+    // padding: 1rem;
+    font-family: 'Poppins','Roboto', sans-serif;
+}
+
+fieldset {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-family: 'Poppins','Roboto', sans-serif;
+    font-size: 1rem;
+    // flex-wrap: wrap;
+}
+
+input[type="text"] {
+    width: 50%;
+    padding: 1rem;
+    border: 1px solid $textDark;;
+    border-bottom: 1px solid $textDark;
+    font-family: 'Poppins','Roboto', sans-serif;
+    margin: 1rem 0;
+    // flex: 0 0 50%;
+}
+
+// input[type="text"]:first-of-type {
+//     margin-right: 1rem;
+// }
+
+// input[type="text"]:nth-child(2) {
+//     margin-left: 1rem;
+// }
+
+textarea {
+    border: 1px solid $textDark;
+    // border-bottom: 1px solid $textDark;
+    padding: 1rem;
+    font-family: 'Poppins','Roboto', sans-serif;
+    margin: 1rem 0;
+    width: 50%;
+}
+
+.send {
+    width: 100%;
+    text-align: left;
+}
+
+
+.footerBottomBar {
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    i {
+        font-size: 1.6rem;
+        letter-spacing: 1.6rem;
+    }
+
+    p {
+        font-family: 'Poppins','Roboto', sans-serif;
+    }
+}
+
+
 // Media Queries for Main content
 @media (max-width: 850px) {
     .aboutText {

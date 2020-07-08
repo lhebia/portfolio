@@ -655,6 +655,66 @@ figure a:hover, figure a:focus {
   background-color: #FCA311;
 }
 
+form {
+  font-family: 'Poppins','Roboto', sans-serif;
+}
+
+fieldset {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-family: 'Poppins','Roboto', sans-serif;
+  font-size: 1rem;
+}
+
+input[type="text"] {
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid #090a0c;
+  border-bottom: 1px solid #090a0c;
+  font-family: 'Poppins','Roboto', sans-serif;
+  margin: 1rem 0;
+}
+
+textarea {
+  border: 1px solid #090a0c;
+  padding: 1rem;
+  font-family: 'Poppins','Roboto', sans-serif;
+  margin: 1rem 0;
+  width: 50%;
+}
+
+.send {
+  width: 100%;
+  text-align: left;
+}
+
+.footerBottomBar {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+}
+
+.footerBottomBar i {
+  font-size: 1.6rem;
+  letter-spacing: 1.6rem;
+}
+
+.footerBottomBar p {
+  font-family: 'Poppins','Roboto', sans-serif;
+}
+
 @media (max-width: 850px) {
   .aboutText {
     padding-left: 1rem;

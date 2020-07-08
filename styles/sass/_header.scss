@@ -1,5 +1,45 @@
 header {
     height: 100vh;
+    position: relative;
+}
+
+.heroLink {
+    margin-top: 3rem;
+}
+
+.scrollDown a {
+    position: absolute;
+    bottom: 50px;
+    left: 47%;
+    z-index: 10;
+    font-weight: bold;
+    height: 30px;
+    width: 80px;
+    border-radius: 50px;
+    text-align: center;
+    line-height: 1.6rem;
+    border: 1px solid $textDark;
+    background-color: rgba(252, 252, 252, 0.48);
+    &:hover {
+        color: $mainHighlight;
+        border: 1px solid $mainHighlight;
+        transform: scale(1);
+    }
+}
+
+.scrollDown a span::before {
+    position: absolute;
+    top: 30px;
+    left: 47%;
+    content: '^';
+    //   width: 10px;
+    //   height: 10px;
+    font-size: 2.2rem;
+    margin-left: -3px;
+    transform: rotate(180deg);
+    &:hover {
+        background-color: $mainHighlight;
+    }
 }
 
 header nav {
@@ -67,6 +107,12 @@ header nav {
     header nav button {
         display: block;
         padding: 0;
+    }
+
+    .scrollDown a {
+        color: $lightBG;
+        border: 1px solid $lightBG;
+        background-color: rgba(252, 252, 252, 0.21);
     }
 
     header nav {

@@ -13,6 +13,11 @@
 </head>
 <body>
     <header>
+        <!-- EXPERIMENTAL PIECE -->
+        <!-- <div class="scrollDown">
+            <a href="#about"><span></span><span></span><span></span>Scroll</a>
+        </div> -->
+
         <div class="container">
             <nav class="flexContainer">
                 <div>
@@ -26,16 +31,16 @@
                         <a href="index.html">Home</a>
                     </li>
                     <li>
-                        <a href="#">About</a>
+                        <a href="#about">About</a>
                     </li>
                     <li>
-                        <a href="#">Skills</a>
+                        <a href="#skills">Skills</a>
                     </li>
                     <li>
-                        <a href="#">Projects</a>
+                        <a href="#projects">Projects</a>
                     </li>
                     <li>
-                        <a href="#">Contact</a>
+                        <a href="#contact">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -51,6 +56,7 @@
                     <h2>I'm Lawrence Hebia</h2>
                     <p class="accentText spacedLetters">Front-End Web Developer</p>
                     <p>I love building things that help make the world a better place.</p>
+                    <a href="#about" class="styledBtn heroLink">Scroll down</a>
                 </div>
             </div>
         </div>
@@ -59,51 +65,58 @@
     <main>
 
         <div class="alternateBackground">
-            <section class="container sectionPadding">
+            <section id="about" class="container sectionPadding">
                 <div class="titleBar">
                     <h2>About Me</h2>
                     <p class="spacedLetters">A Front-End Web Developer</p>
                 </div>
-                <div class="flexContainer aboutContent">
+                <div class="flexContainer aboutContent sectionPadding">
                     <div class="aboutImage">
-                        <img src="https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="Profile photo for Lawrence Hebia" />
+                        <img id="profilePhoto" src="./../assets/profilePhoto.jpg" alt="Profile photo for Lawrence Hebia" />
+                        <!-- <img src="https://images.unsplash.com/photo-1520466809213-7b9a56adcd45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                            alt="Profile photo for Lawrence Hebia" /> -->
                     </div>
                     <article class="aboutText flexContainer">
                         <div>
                             <h3>I'm Lawrence Hebia</h3>
-                            <p><strong>A <span class="accentText">Front-End Web Developer</span> based in <spa class="accentText"n>Toronto, Canada</span></strong></p>
-                            <p class="description">
-                                I am a passionate and dedicated Front-End Web Developer who loves to build things for the betterment of society. I
-                                believe in writing code that is easy for humans to read and build User Interfaces that are easy for humans to
-                                understand. I love working with people and I believe in doing great work by doing what you love.
-                            </p>
+                            <p><strong class="minorSpacedLetters">A <span class="accentText">Front-End Web Developer</span> based in Toronto, Canada</strong></p>
+                            <div class="description">
+                                <p>
+                                    I am a passionate and dedicated Front-End Web Developer who loves to build things that help to make the world a
+                                    better place. I
+                                    believe in writing code that is easy for humans to read and build User Interfaces that are easy for humans to
+                                    understand. I love working with people and I believe in doing great work by doing what you love.
+                                </p>
+                                <p>
+                                    On a more personal level, I prefer clean and flat over complex and complicated. I love to spend time with my kids, tinker with and experiement with different types of technologies (I'm currently working on a Raspberry PI music box with my kids) and most importantly, I love coffee - I'm always open to connecting over a coffee(from a safe distance, of course).
+                                </p>
+                            </div>
                             <button class="styledBtn">Download CV</button>
                         </div>
                     </article>
-
                 </div>
             </section>
         </div>
 
         
-        <section class="container sectionPadding">
+        <section id="skills" class="container sectionPadding">
             <div class="titleBar">
                 <h2>My Skills</h2>
                 <p class="spacedLetters">My growing toolbox</p>
             </div>
-            <ul class="skillsContainer gridContainer">
+            <ul class="skillsContainer gridContainer sectionPadding">
                 <!-- Populated with JavaScript -->
             </ul>
         </section>
 
         <div class="alternateBackground">
-            <section class="container sectionPadding">
+            <section id="projects" class="container sectionPadding">
                 <div class="titleBar">
                     <h2>Recent Work</h2>
                     <p class="spacedLetters">A few of the things i've built</p>
                 </div>
 
-                <div class="gridContainer projectGrid">
+                <div class="gridContainer projectGrid sectionPadding">
                     <article class="projectArticle" data-aos="fade-up"
                         data-aos-offset="100"
                         data-aos-delay="200"
@@ -116,7 +129,7 @@
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
-                        <div class=""">
+                        <div>
                             <p class="spacedLetters"><strong>Devcompile</strong></p>
                             <p>Built using React, the Dev.to API and Firebase.</p>
                             <p><a href="https://lhebia.github.io/lawrence-hebia-project-five/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/lhebia/lawrence-hebia-project-five" target="_blank" rel="noreferrer noopener">Github</a></p>
@@ -132,7 +145,7 @@
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
-                        <div class=""">
+                        <div>
                             <p class=" spacedLetters"><strong>TravelAsk</strong></p>
                             <p>Built using JQuery, SASS and API data.</p>
                             <p><a href="https://yuliana-lawrence.github.io/travelAsk/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/Yuliana-Lawrence/travelAsk" target="_blank"
@@ -152,7 +165,7 @@
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
-                        <div class=""">
+                        <div>
                             <p class="spacedLetters"><strong>Noah's Ark</strong></p>
                             <p>Built using HTML5, CSS3 and JQuery.</p>
                             <p><a href="https://lhebia.github.io/lawrenceHebiaProjectThree/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/lhebia/lawrenceHebiaProjectThree" target="_blank"
@@ -172,7 +185,7 @@
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
-                        <div class=""">
+                        <div>
                             <p class="spacedLetters"><strong>My Watchlist</strong></p>
                             <p>Built using React, Firebase and remote collaboration.</p>
                             <p><a href="https://tobikoberalphandnull.github.io/project-six/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/TobiKobeRalphAndNull/project-six" target="_blank"
@@ -192,7 +205,7 @@
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
-                        <div class=""">
+                        <div>
                             <p class="spacedLetters"><strong>Fun Place</strong></p>
                             <p>Multipage PSD conversion using HTML5 and CSS3.</p>
                             <p><a href="https://lhebia.github.io/lawrence-hebia-project-two/" target="_blank" rel="noreferrer noopener">Live</a> | <a href="https://github.com/lhebia/lawrence-hebia-project-two" target="_blank"
@@ -209,7 +222,7 @@
                             </figcaption>
                             <div class="overlay"></div>
                         </figure>
-                        <div class=""">
+                        <div>
                                                 <p class=" spacedLetters"><strong>Password Generator</strong></p>
                             <p>Built using HTML, CSS3 and JavaScript.</p>
                             <p><a href="https://lhebia.github.io/Password-generator/" target="_blank" rel="noreferrer noopener">Live</a> |
@@ -224,35 +237,39 @@
     </main>
 
     <footer>
-        <section class="container sectionPadding">
+        <section id="contact" class="container sectionPadding">
             <div class="titleBar">
                 <h2>Get in Touch</h2>
                 <!-- <p class="spacedLetters">A Front-End Web Developer</p> -->
             </div>
-            <form class="" action="https://formspree.io/xwkrrapw" method="POST">
-                <fieldset class="flexContainer">
-                    <legend>Let's Connect</legend>
-                    <label for="senderName" class="visuallyHidden">Your name:</label>
-                    <input type="text" name="senderName" placeholder="Name *">
-                    <label for="senderAddress" class="visuallyHidden">Your email:</label>
-                    <input type="text" name="senderAddress" placeholder="Email *">
-                    <label for="message" class="visuallyHidden">Your message:</label>
-                    <textarea name="message" placeholder="Your message *" cols="60" rows="5"></textarea>
-                    <div class="send">
-                        <button type="submit" class="styledBtn">Send</button>
-                    </div>
-                </fieldset>
-            </form>
+            <article class="sectionPadding">
+                <p>You can find me on <a href="https://Twitter.com/lhebia/" target="_blank" rel="noreferrer noopener">Twitter</a>, <a href="https://github.com/lhebia/" target="_blank" rel="noreferrer noopener">Github</a>, <a href="https://www.linkedin.com/in/lhebia/" target="_blank" rel="noreferrer noopener">LinkedIn</a>, <a href="https://dev.to/lhebia" target="_blank" rel="noreferrer noopener">Dev.to</a> or simply complete the form below to get in touch.</p>
+                <form action="https://formspree.io/xwkrrapw" method="POST">
+                    <fieldset class="flexContainer">
+                        <legend class="visuallyHidden">Contact Form</legend>
+                        <label for="senderName" class="visuallyHidden">Your name:</label>
+                        <input type="text" name="senderName" placeholder="Name *">
+                        <label for="senderAddress" class="visuallyHidden">Your email:</label>
+                        <input type="text" name="senderAddress" placeholder="Email *">
+                        <label for="message" class="visuallyHidden">Your message:</label>
+                        <textarea name="message" placeholder="Your message *" cols="60" rows="5"></textarea>
+                        <div class="send">
+                            <button type="submit" class="styledBtn">Send</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </article>
         </section>
 
         <div class="alternateBackground">
             <div class="container flexContainer footerBottomBar">
-                <ul class="flexContainer">
-                    <li><i class="fab fa-twitter"></i></i></li>
-                    <li><i class="fab fa-github"></i></li>
-                    <li><i class="fab fa-linkedin"></i></i></li>
+                <ul class="flexContainer socialLinks">
+                    <li><a href="https://Twitter.com/lhebia/" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://github.com/lhebia/" target="_blank" rel="noreferrer noopener"><i class="fab fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/lhebia/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://dev.to/lhebia" target="_blank" rel="noreferrer noopener"><i class="fab fa-dev"></i></a></li>
                 </ul>
-                <p>Handcrafted by me &#169; twenty-twenty</p>
+                <p>Handcrafted by me &#169; twenty-twenty.</p>
             </div>
         </div>
     </footer>

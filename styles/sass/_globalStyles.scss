@@ -64,6 +64,10 @@ a {
     letter-spacing: 0.1rem;
 }
 
+.minorSpacedLetters {
+    letter-spacing: 0.05rem;
+}
+
 strong {
     font-weight: bolder;
 }
@@ -80,8 +84,8 @@ strong {
     color: $lightBG;
     font-weight: bold;
     border: none;
+    border-radius: $borderRadius;
     transition: all ease 0.3s;
-
     &:hover,
     &:focus {
         background-color: $altDark;

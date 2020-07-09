@@ -525,26 +525,12 @@ header nav ul li {
   }
 }
 
-@-webkit-keyframes disappear {
-  from {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  to {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
-}
-
-@keyframes disappear {
-  from {
-    -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-  }
-  to {
-    -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-  }
+.mainMenuNav.makeVisible {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-name: appear;
+          animation-name: appear;
+  opacity: 1;
 }
 
 @media (max-width: 1350px) {
@@ -594,13 +580,6 @@ header nav ul li {
     border-radius: 8px;
     opacity: 0;
     margin-top: 1.6rem;
-  }
-  .makeVisible {
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
-    -webkit-animation-name: appear;
-            animation-name: appear;
-    opacity: 1;
   }
   .heroContainer {
     -webkit-box-orient: vertical;

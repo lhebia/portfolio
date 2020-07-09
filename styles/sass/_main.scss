@@ -28,6 +28,12 @@
     }
 }
 
+.downloadBtn:hover,
+.downloadBtn:focus {
+    color: $lightBG;
+    border: none;
+}
+
 
 // My Skills section
 

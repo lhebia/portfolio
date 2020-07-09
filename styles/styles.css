@@ -271,7 +271,7 @@ a:hover, a:focus {
 }
 
 .alternateBackground {
-  background-color: #E5E5E5;
+  background-color: #eeeeee;
 }
 
 .accentText {
@@ -380,7 +380,7 @@ header {
   margin: auto;
   z-index: 10;
   -webkit-transform: rotate(155deg);
-          transform: rotate(155deg);
+  transform: rotate(155deg);
 }
 
 @-webkit-keyframes slide {
@@ -428,9 +428,21 @@ header nav {
 }
 
 header nav h1 {
-  color: #fcfcfc;
+  color: #090a0c;
   font-size: 1.2rem;
   font-weight: bold;
+}
+
+header nav a:hover,
+header nav a:focus {
+  border-bottom: none;
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+header nav a:hover h1,
+header nav a:focus h1 {
+  color: #FCA311;
 }
 
 header nav li {
@@ -481,7 +493,7 @@ header nav ul li {
 .heroContainer .heroImage {
   width: 50%;
   opacity: 0.9;
-  background-image: url("./../assets/hero-splash3.jpg");
+  background-image: url("./../assets/hero-splash3-1.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -642,6 +654,12 @@ header nav ul li {
 
 .description p {
   padding: 0.5rem 0;
+}
+
+.downloadBtn:hover,
+.downloadBtn:focus {
+  color: #fcfcfc;
+  border: none;
 }
 
 .skillsContainer {

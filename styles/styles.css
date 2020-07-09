@@ -461,8 +461,8 @@ header nav button img {
 }
 
 .mainMenuNav {
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.1s ease;
+  transition: all 0.1s ease;
 }
 
 header nav ul li {
@@ -526,11 +526,12 @@ header nav ul li {
 }
 
 .mainMenuNav.makeVisible {
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
+  -webkit-animation-duration: 0.6s;
+          animation-duration: 0.6s;
   -webkit-animation-name: appear;
           animation-name: appear;
   opacity: 1;
+  z-index: 1000;
 }
 
 @media (max-width: 1350px) {

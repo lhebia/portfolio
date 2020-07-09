@@ -42,41 +42,50 @@ a {
     }
 }
 
+// Re-used to engage flexbox
 .flexContainer {
     display: flex;
 }
 
+// Main content wrapper
 .container {
     max-width: 1200px;
     width: 85%;
     margin: 0 auto;
 }
 
+// Produce alternate colour background
 .alternateBackground {
     background-color: $alternateBG;
 }
 
+// Used throughout to colour accented text
 .accentText {
     color: $mainHighlight;
 }
 
+// Space letters on some smaller titles
 .spacedLetters {
     letter-spacing: 0.1rem;
 }
 
+// Less spacing on letters for titles
 .minorSpacedLetters {
     letter-spacing: 0.05rem;
 }
 
+// Bold items
 strong {
     font-weight: bolder;
 }
 
+// Top & bottom padding for each main section
 .sectionPadding {
     padding-top: 5.2rem;
     padding-bottom: 5.2rem;
 }
 
+// Global button and button like a tags styling
 .styledBtn {
     background-color: $mainHighlight;
     padding: 1rem 1.6rem;
@@ -92,6 +101,7 @@ strong {
     }
 }
 
+// Title section of each main section
 .titleBar {
     text-transform: uppercase;
     h2 {
@@ -110,6 +120,7 @@ strong {
     }
 }
 
+// Globally used to engage CSS Grid
 .gridContainer {
     display: grid;
 }

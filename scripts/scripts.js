@@ -24,29 +24,29 @@ lhApp.skills = [
     { icon: '<i class="fab fa-python"></i>', skillName: 'Python3' },
 ];
 
-// Function for allow mobile menu to appear, and disappear from each link click
-lhApp.addMenuButtonListener = () => {
-    lhApp.mainMenuBtn = document.querySelector('.mainMenuBtn');
-    lhApp.mainMenuLinks = document.querySelectorAll('.mainMenuLink');
+// Function to allow mobile menu to appear, and disappear from each link click
+lhApp.addMenuButtonListener = function() {
+    this.mainMenuBtn = document.querySelector('.mainMenuBtn');
+    this.mainMenuLinks = document.querySelectorAll('.mainMenuLink');
     const grabMenuAndToggleVisibility = () => {
         const nav = document.querySelector('.mainMenuNav');
         nav.classList.toggle('makeVisible');
     }
-    lhApp.mainMenuBtn.addEventListener('click', () => {
+    this.mainMenuBtn.addEventListener('click', () => {
         grabMenuAndToggleVisibility();
     })
-    lhApp.mainMenuLinks.forEach((link) => {
+    this.mainMenuLinks.forEach((link) => {
         link.addEventListener('click', () => {
             grabMenuAndToggleVisibility();
         })
     })
 }
-// To support DRY for above
 
-
-lhApp.fillSkills = () => {
+// Fill skills section with content from skills object
+// Produce random values for use in AOS
+lhApp.fillSkills = function() {
     const skillsContainer = document.querySelector('.skillsContainer');
-    lhApp.skills.forEach((skill) => {
+    this.skills.forEach((skill) => {
         const skillBox = document.createElement('li');
         const randomDuration = Math.floor(Math.random() * 2500);
         const randomDelay = Math.floor(Math.random() * 200);
@@ -64,6 +64,8 @@ lhApp.fillSkills = () => {
     })
 }
 
+// On-load determine width of viewport and assign IMG src to match
+// Mostly for aesthetic use
 lhApp.fitImageToWidth = () => {
     let viewportWidth = window.innerWidth;
     let profilePhoto = document.querySelector('#profilePhoto');
@@ -72,6 +74,6 @@ lhApp.fitImageToWidth = () => {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", () => {
     lhApp.init();
 });

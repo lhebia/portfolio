@@ -1,15 +1,7 @@
 // Main area 
-
-// About section 
-// .aboutContent {
-//     padding: 5rem 0;
-// }
-
 .aboutImage {
     flex: 1 1 40%;
     img {
-        // border: 20px solid $lightBG;
-        // border: 20px solid transparent;
         border-radius: $borderRadius;
     }
 }
@@ -22,7 +14,7 @@
 }
 
 .description {
-    padding: 2.2rem 0;
+    padding: 1.6rem 0;
     p {
         padding: 0.5rem 0; 
     }
@@ -36,17 +28,13 @@
 
 
 // My Skills section
-
 .skillsContainer {
     grid-template-columns: repeat(4, 1fr);
-    // padding: 2.2rem 0;
     gap: 1.6rem;
 }
 
 .toolBox {
     padding: 1rem;
-    // border: 1px solid $mainHighlight;
-    // border-radius: $borderRadius;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -60,7 +48,6 @@
 // Project Section
 .projectGrid {
     grid-template-columns: repeat(3, 1fr);
-    // padding: 1.6rem 0;
     gap: 2.2rem;
 }
 
@@ -160,6 +147,7 @@ figure a {
 
 }
 
+// Tablet MQ's
 @media (max-width: 768px) {
     .aboutContent {
         flex-direction: column;
@@ -178,12 +166,14 @@ figure a {
     }
 }
 
+// L Phones
 @media (max-width: 550px) {
     .projectGrid {
         grid-template-columns: 1fr;
     }
 }
 
+// S phones
 @media (max-width: 480px) {
     .skillsContainer {
         grid-template-columns: repeat(2, 1fr);

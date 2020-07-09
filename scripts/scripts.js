@@ -24,18 +24,37 @@ lhApp.skills = [
     { icon: '<i class="fab fa-python"></i>', skillName: 'Python3' },
 ];
 
+// Function for allow mobile menu to appear, and disappear from each link click
 lhApp.addMenuButtonListener = () => {
     lhApp.mainMenuBtn = document.querySelector('.mainMenuBtn');
-    lhApp.mainMenuBtn.addEventListener('click', () => {
+    lhApp.mainMenuLinks = document.querySelectorAll('.mainMenuLink');
+    const grabMenuAndToggleVisibility = () => {
         const nav = document.querySelector('.mainMenuNav');
         nav.classList.toggle('makeVisible');
+    }
+    lhApp.mainMenuBtn.addEventListener('click', () => {
+        grabMenuAndToggleVisibility();
+    })
+    lhApp.mainMenuLinks.forEach((link) => {
+        link.addEventListener('click', () => {
+            grabMenuAndToggleVisibility();
+        })
     })
 }
+// To support DRY for above
+
 
 lhApp.fillSkills = () => {
     const skillsContainer = document.querySelector('.skillsContainer');
     lhApp.skills.forEach((skill) => {
         const skillBox = document.createElement('li');
+        const randomDuration = Math.floor(Math.random() * 2500);
+        const randomDelay = Math.floor(Math.random() * 200);
+        const randomOffset = Math.floor(Math.random() * 200);
+        skillBox.setAttribute('data-aos', 'fade-up');
+        skillBox.setAttribute('data-aos-duration', randomDuration);
+        skillBox.setAttribute('data-aos-delay', randomDelay);
+        skillBox.setAttribute('data-aos-offset', randomOffset);
         skillBox.classList.add('toolBox');
         skillBox.innerHTML = `
             <span class="skillLogo" aria-label="Icon for ${skill.skillName}">${skill.icon}</span>

@@ -3,7 +3,6 @@ const lhApp = {};
 lhApp.init = () => {
     lhApp.addMenuButtonListener();
     lhApp.fillSkills();
-    lhApp.fitImageToWidth();
 }
 
 lhApp.skills = [
@@ -62,16 +61,6 @@ lhApp.fillSkills = function() {
         `;
         skillsContainer.appendChild(skillBox);
     })
-}
-
-// On-load determine width of viewport and assign IMG src to match
-// Mostly for aesthetic use
-lhApp.fitImageToWidth = () => {
-    let viewportWidth = window.innerWidth;
-    let profilePhoto = document.querySelector('#profilePhoto');
-    if (viewportWidth <= 768) {
-        profilePhoto.src = "./../assets/profilePhotoMobile.jpg";
-    }
 }
 
 document.addEventListener("DOMContentLoaded", () => {

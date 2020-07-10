@@ -286,6 +286,12 @@ a:hover, a:focus {
   letter-spacing: 0.05rem;
 }
 
+.code {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 0.92rem;
+  text-transform: uppercase;
+}
+
 strong {
   font-weight: bolder;
 }

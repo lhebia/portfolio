@@ -666,10 +666,15 @@ header nav ul li {
   padding: 0.5rem 0;
 }
 
+.downloadBtn {
+  text-decoration: none;
+}
+
 .downloadBtn:hover,
 .downloadBtn:focus {
   color: #fcfcfc;
   border: none;
+  text-decoration: none;
 }
 
 .skillsContainer {

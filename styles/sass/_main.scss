@@ -20,10 +20,15 @@
     }
 }
 
+.downloadBtn {
+    text-decoration: none;
+}
+
 .downloadBtn:hover,
 .downloadBtn:focus {
     color: $lightBG;
     border: none;
+    text-decoration: none;
 }
 
 

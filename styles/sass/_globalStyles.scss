@@ -32,12 +32,11 @@ i {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: underline solid 1px $mainHighlight;
     color: $textDark;
     &:hover,
     &:focus {
         color: $mainHighlight;
-        border-bottom: 1px solid $mainHighlight;
         transform: scale(1.1);
     }
 }

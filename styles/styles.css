@@ -247,13 +247,13 @@ i {
 }
 
 a {
-  text-decoration: none;
+  -webkit-text-decoration: underline solid 1px #FCA311;
+          text-decoration: underline solid 1px #FCA311;
   color: #090a0c;
 }
 
 a:hover, a:focus {
   color: #FCA311;
-  border-bottom: 1px solid #FCA311;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -439,9 +439,13 @@ header nav h1 {
   font-weight: bold;
 }
 
+header nav a {
+  text-decoration: none;
+}
+
 header nav a:hover,
 header nav a:focus {
-  border-bottom: none;
+  text-decoration: none;
   -webkit-transform: scale(1.01);
           transform: scale(1.01);
 }
@@ -884,6 +888,12 @@ input[type="text"] {
   border-radius: 5px;
 }
 
+input[type="text"]:focus {
+  border: 1px solid #FCA311;
+  -webkit-box-shadow: 0px 3px 25px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 25px -15px rgba(0, 0, 0, 0.75);
+}
+
 textarea {
   border: none;
   border: 1px solid #090a0c;
@@ -893,6 +903,12 @@ textarea {
   margin: 1rem 0;
   width: 100%;
   border-radius: 5px;
+}
+
+textarea:focus {
+  border: 2px solid #FCA311;
+  -webkit-box-shadow: 0px 3px 25px -15px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 3px 25px -15px rgba(0, 0, 0, 0.75);
 }
 
 .send {

@@ -72,9 +72,13 @@ header nav {
         font-weight: bold;
     }
 
+    a {
+        text-decoration: none;
+    }
+
     a:hover,
     a:focus {
-        border-bottom: none;
+        text-decoration: none;
         transform: scale(1.01);
         h1 {
             color: $mainHighlight;

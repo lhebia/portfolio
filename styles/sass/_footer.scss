@@ -36,17 +36,14 @@ input[type="text"] {
     border-bottom: 1px solid $textDark;
     font-family: 'Poppins','Roboto', sans-serif;
     margin: 1rem 0;
-    // flex: 0 0 50%;
     border-radius: $borderRadius;
+    &:focus {
+        border: 1px solid $mainHighlight;
+        -webkit-box-shadow: 0px 3px 25px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 3px 25px -15px rgba(0,0,0,0.75);
+        box-shadow: 0px 3px 25px -15px rgba(0,0,0,0.75);
+    }
 }
-
-// input[type="text"]:first-of-type {
-//     margin-right: 1rem;
-// }
-
-// input[type="text"]:nth-child(2) {
-//     margin-left: 1rem;
-// }
 
 textarea {
     border: none;
@@ -57,6 +54,12 @@ textarea {
     margin: 1rem 0;
     width: 100%;
     border-radius: $borderRadius;
+    &:focus {
+        border: 2px solid $mainHighlight;
+        -webkit-box-shadow: 0px 3px 25px -15px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 3px 25px -15px rgba(0,0,0,0.75);
+        box-shadow: 0px 3px 25px -15px rgba(0,0,0,0.75);
+    }
 }
 
 .send {

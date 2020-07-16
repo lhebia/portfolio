@@ -49,7 +49,7 @@ lhApp.fillSkills = function() {
         const skillBox = document.createElement('li');
         const randomDuration = Math.floor(Math.random() * 2500);
         const randomDelay = Math.floor(Math.random() * 200);
-        const randomOffset = Math.floor(Math.random() * 300);
+        const randomOffset = Math.floor(Math.random() * 200);
         skillBox.setAttribute('data-aos', 'fade-up');
         skillBox.setAttribute('data-aos-duration', randomDuration);
         skillBox.setAttribute('data-aos-delay', randomDelay);

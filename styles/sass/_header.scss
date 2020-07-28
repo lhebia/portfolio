@@ -7,45 +7,6 @@ header {
     margin-top: 3rem;
 }
 
-.scrollDown {
-    position: absolute;
-    bottom: 30px;
-    left: 49%;
-}
-
-.scrollDown a {
-    width: 35px;
-    height: 35px;
-    position: relative;
-    display: inline-block;
-    background-color: $mainHighlight;
-    border-radius: 50%;
-    z-index: 10;
-    animation: slide 2s infinite;
-    &:hover {
-        opacity: 0.6;
-    }
-}
-
-.scrollDown a span {
-    border-top: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    width: 10px;
-    height: 10px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    z-index: 10;
-    -moz-transform: rotate(155deg);
-    -o-transform: rotate(155deg);
-    -ms-transform: rotate(155deg);
-    -webkit-transform: rotate(155deg);
-    transform: rotate(155deg);
-}
-
 @keyframes slide {
   0% {
     transform: rotate(-45deg) translate(0, 0);
@@ -141,10 +102,26 @@ header nav ul li {
     }
 }
 
-.heroText p:nth-of-type(2) {
-    font-size: 1.6rem;
+.heroText p {
     line-height: 2.2rem;
 }
+
+.heroText p:nth-of-type(2) {
+    font-size: 1.6rem;
+}
+
+.scrollIndicator {
+    font-size: 1.2rem;
+    opacity: 0.6;
+    animation: blinkingText 1.6s infinite;
+}
+
+@keyframes blinkingText{
+    0%{ opacity: 1; }
+    50%{ opacity: 0.01; }
+    100%{ opacity: 1; }
+}
+
 
 @keyframes appear {
   from {
@@ -236,5 +213,16 @@ header nav ul li {
     .heroText p:nth-of-type(2) {
         font-size: 1rem;
         line-height: 1.6rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .heroText p {
+        line-height: 1.25rem;
+    }
+
+    .heroText h2 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
     }
 }

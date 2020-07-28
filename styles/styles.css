@@ -824,6 +824,14 @@ figure a:hover, figure a:focus {
   background-color: #FCA311;
 }
 
+@media (max-width: 900px) {
+  figcaption {
+    padding: 0 3rem;
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+}
+
 @media (max-width: 850px) {
   .aboutText {
     padding-left: 1rem;

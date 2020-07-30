@@ -794,7 +794,7 @@ figcaption {
 }
 
 figure:hover .overlay {
-  opacity: 0.96;
+  opacity: 0.97;
   z-index: 1;
 }
 

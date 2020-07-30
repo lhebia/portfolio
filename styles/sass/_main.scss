@@ -68,6 +68,7 @@ figure {
     position: relative;
     border-radius: $borderRadius;
     margin-bottom: 1.6rem;
+    overflow: hidden;
 }
 
 figure img {
@@ -123,7 +124,7 @@ figure:hover figcaption {
     z-index: 2;
 }
 figure:hover img {
-    transform: scale(0.94);
+    transform: scale(1.2);
 }
 
 figure a {

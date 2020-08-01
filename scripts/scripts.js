@@ -3,6 +3,7 @@ const lhApp = {};
 lhApp.init = () => {
     lhApp.addMenuButtonListener();
     lhApp.fillSkills();
+    lhApp.addNavBarListener();
 }
 
 lhApp.skills = [
@@ -60,6 +61,13 @@ lhApp.fillSkills = function() {
             <span class="skillName">${skill.skillName}</span>
         `;
         skillsContainer.appendChild(skillBox);
+    })
+}
+
+lhApp.addNavBarListener = () => {
+    window.addEventListener('scroll', function() {
+        const header = document.querySelector('header');
+        header.classList.toggle('sticky', window.scrollY > 0);
     })
 }
 

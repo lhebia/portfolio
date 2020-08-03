@@ -4,6 +4,7 @@ lhApp.init = () => {
     lhApp.addMenuButtonListener();
     lhApp.fillSkills();
     lhApp.addNavBarListener();
+    lhApp.developerMessage();
 }
 
 lhApp.skills = [
@@ -69,6 +70,13 @@ lhApp.addNavBarListener = () => {
         const header = document.querySelector('header');
         header.classList.toggle('sticky', window.scrollY > 0);
     })
+}
+
+lhApp.developerMessage = () => {
+    console.log('Well hello there, fellow developer.');
+    console.log(`If you'd like to see the source code,`);
+    console.log(`it's available on Github: https://github.com/lhebia/portfolio`);
+    console.log('Have a great day! 😇');
 }
 
 document.addEventListener("DOMContentLoaded", () => {

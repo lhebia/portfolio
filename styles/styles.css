@@ -411,6 +411,11 @@ header nav {
           align-items: center;
 }
 
+header nav i {
+  font-size: 1.6rem;
+  line-height: 2.2rem;
+}
+
 header nav h1 {
   color: #090a0c;
   font-size: 1.2rem;
@@ -567,6 +572,7 @@ header nav ul li {
           animation-name: appear;
   opacity: 1;
   z-index: 1000;
+  top: 45px;
 }
 
 @media (max-width: 1350px) {
@@ -618,9 +624,10 @@ header nav ul li {
     opacity: 0;
     margin-top: 1.6rem;
     position: fixed;
-    top: 45px;
+    top: -400px;
     -webkit-box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.38);
             box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.38);
+    z-index: -100;
   }
   .heroContainer {
     -webkit-box-orient: vertical;

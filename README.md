@@ -6,6 +6,10 @@ Built with HTML5, Sass, JavaScript and ❤️.
 
 ## Updates
 
+#### Aug 8, 2020
+
+* Updated form for accessibility.
+
 #### Aug 2, 2020
 
 * Updated project pieces and added developer note in console.

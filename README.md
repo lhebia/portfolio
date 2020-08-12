@@ -6,9 +6,14 @@ Built with HTML5, Sass, JavaScript and ❤️.
 
 ## Updates
 
+#### Aug 11, 2020
+
+* Fixed labels on form to apply correctly. 
+* Adjusted blur and opacity on sticky header. 
+
 #### Aug 8, 2020
 
-* Updated form for accessibility.
+* Updated form design for accessibility.
 
 #### Aug 2, 2020
 

@@ -10,8 +10,8 @@ header {
 
 .sticky {
     // position: sticky;
-    backdrop-filter: saturate(180%) blur(20px);
-    opacity: 0.96;
+    backdrop-filter: saturate(180%) blur(50px);
+    opacity: 0.88;
     background-color: $lightBG;
     padding: 0.2rem 0 0.2rem 0;
     box-shadow: 0px 4px 15px -7px rgba(0,0,0,0.38);

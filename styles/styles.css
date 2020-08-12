@@ -359,9 +359,9 @@ header {
 }
 
 .sticky {
-  -webkit-backdrop-filter: saturate(180%) blur(20px);
-          backdrop-filter: saturate(180%) blur(20px);
-  opacity: 0.96;
+  -webkit-backdrop-filter: saturate(180%) blur(50px);
+          backdrop-filter: saturate(180%) blur(50px);
+  opacity: 0.88;
   background-color: #fcfcfc;
   padding: 0.2rem 0 0.2rem 0;
   -webkit-box-shadow: 0px 4px 15px -7px rgba(0, 0, 0, 0.38);

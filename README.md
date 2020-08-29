@@ -8,6 +8,10 @@ Built with HTML5, Sass, JavaScript and ❤️.
 
 #### Aug 11, 2020
 
+* Adjusted blur on navbar once again.
+
+#### Aug 11, 2020
+
 * Fixed labels on form to apply correctly. 
 * Adjusted blur and opacity on sticky header. 
 

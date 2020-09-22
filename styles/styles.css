@@ -470,6 +470,29 @@ header nav button img {
   transition: all 0.1s ease;
 }
 
+.mainMenuNav li a {
+  position: relative;
+}
+
+.mainMenuLink::after {
+  content: "";
+  position: absolute;
+  top: 1.7rem;
+  left: 0px;
+  width: 100%;
+  z-index: -1;
+  height: 0.2rem;
+  background-color: #FCA311;
+  opacity: 0;
+  -webkit-transition: .2s ease;
+  transition: .2s ease;
+}
+
+.mainMenuLink:hover::after,
+.mainMenuLink:focus::after {
+  opacity: 1;
+}
+
 header nav ul li {
   width: 100%;
   background-color: #fcfcfc;

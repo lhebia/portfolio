@@ -86,6 +86,27 @@ header nav {
 
 .mainMenuNav {
     transition: all 0.1s ease;
+    li a {
+        position: relative;
+    }
+}
+
+.mainMenuLink::after {
+    content: "";
+    position: absolute;
+    top: 1.7rem;
+    left: 0px;
+    width: 100%;
+    z-index: -1;
+    height: 0.2rem;
+    background-color: $mainHighlight;
+    opacity: 0;
+    transition: .2s ease;
+}
+
+.mainMenuLink:hover::after,
+.mainMenuLink:focus::after {
+    opacity: 1;
 }
 
 header nav ul li {

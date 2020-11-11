@@ -1,6 +1,7 @@
 # Portfolio Website
 
-Source code for my current portfolio website [LawrenceHebia.com](https://lawrencehebia.com).
+Source code for the first iteration of my portfolio website [LawrenceHebia.com](https://lawrencehebia.com).
+This version is now accessible [here](https://lhebiaportfoliov1.netlify.app/).
 Built with HTML5, Sass, JavaScript and ❤️.
 
 
